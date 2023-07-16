@@ -217,7 +217,13 @@ const RightSubcriptionContainer = () => {
                         />
                       }
                       label={option.label}
-                      sx={{ color: "black", marginTop: "1px" }}
+                      sx={{ color: "black", marginTop: "1px" ,marginLeft: "-130px",
+                      "& .MuiRadio-root": {
+                        marginRight: "40px"
+                      },
+                      "& .MuiTypography-root": {
+                        marginLeft: "-80px"
+                      }}}
                       disabled={
                         option.total === 99 &&
                         option.label === "12 Months Subscription"
@@ -265,7 +271,7 @@ const RightSubcriptionContainer = () => {
                       sx={{
                         fontSize: "18PX",
                         color: "white",
-                        marginLeft: option.label === "12 Months Subscription" ? "51px" : "56px",
+                        marginLeft: option.label === "12 Months Subscription" ? "12px" : "16px",
                         marginTop: "-36px",
                         zIndex: "48",
                         backgroundColor: "green",
@@ -328,7 +334,7 @@ const RightSubcriptionContainer = () => {
                 marginBottom: "10px",
               }}
             >
-              <AccessTimeIcon sx={{ color: "orangered", fontSize: 16 }} /> Offer
+              <AccessTimeIcon sx={{ color: "orangered", fontSize: 16}} /> Offer
               valid till 25 March 2023
             </Typography>
           </div>
