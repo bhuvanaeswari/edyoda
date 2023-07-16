@@ -157,7 +157,7 @@ const RightSubcriptionContainer = () => {
                   sx={{
                     display: "flex",
                     flexDirection: "column",
-                    height: "60px",
+                    height: "50px",
                     width: "100%",
                     borderRadius: "5px",
                     backgroundColor:
@@ -183,6 +183,7 @@ const RightSubcriptionContainer = () => {
                         color: "white",
                         borderRadius: "4px",
                         width: "30%",
+                        marginTop:"-10px"
                       }}
                     >
                       Offer Expired
@@ -198,6 +199,7 @@ const RightSubcriptionContainer = () => {
                         borderRadius: "4px",
                         marginTop: "0px",
                         width: "30%",
+                        marginTop:"-10px"
                       }}
                     >
                       Recommended
@@ -263,7 +265,7 @@ const RightSubcriptionContainer = () => {
                       sx={{
                         fontSize: "18PX",
                         color: "white",
-                        marginLeft: "55px",
+                        marginLeft: option.label === "12 Months Subscription" ? "51px" : "56px",
                         marginTop: "-36px",
                         zIndex: "48",
                         backgroundColor: "green",
